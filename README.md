@@ -1,3 +1,4 @@
+![demo image] (https://github.com/dartmouth-cs98/hack-a-thing-1-98hackone/blob/master/ziemer_hackathing1UI.PNG)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 (The 'backend' folder was bootstrapped with express-generator)
