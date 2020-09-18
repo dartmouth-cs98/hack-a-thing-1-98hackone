@@ -2,3 +2,12 @@ button {
     color: white;
     background-color: green;
 }
+
+#basic-react-demo {
+    float: left;
+    padding-right: 100px;
+}
+
+#backend-connection {
+    float: left
+}
