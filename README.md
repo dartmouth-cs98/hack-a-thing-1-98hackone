@@ -1,4 +1,7 @@
-![demo image] (https://github.com/dartmouth-cs98/hack-a-thing-1-98hackone/blob/master/ziemer_hackathing1UI.PNG)
+![demo image] (https://github.com/dartmouth-cs98/hack-a-thing-1-98hackone/blob/master/ziemer_hackathing1UI.png)
+
+(I don't know why the image isn't working, just click the link if you want to see)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
 (The 'backend' folder was bootstrapped with express-generator)
@@ -30,3 +33,8 @@ Overall everything seemed to work in the end. I had a little bit of trouble with
 * [General concepts and examples on how to use react (several of the pages in 'Main concepts'):] (https://reactjs.org/docs/handling-events.html)
 * [Getting started blueprint for writing a backend:] (https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/)
 * [Info on how to get a free MongoDB cluster up and running:] (https://docs.atlas.mongodb.com/getting-started/)
+
+## how to run 
+* frontend (in top folder): npm start
+* backend (in '/backend): npm start
+* the MongoDB cluster should be running and have open access (don't submit any confidential greetings!)
