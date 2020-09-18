@@ -11,12 +11,18 @@ var cloud_url = "mongodb+srv://demoUser:" + demo_password + "@cluster0.gtdqw.mon
 
 router.get('/', function(req, res) {
     MongoClient.connect(cloud_url, function(err, db) { 
+        // learned how to get GET params from https://stackoverflow.com/questions/6912584/how-to-get-get-query-string-variables-in-express-js-on-node-js
+        console.log("Recieved GET for username: " + req.query.Username)
         var this_db = db.db('demoDB');
         //learned how to get most recent from 
         //https://stackoverflow.com/questions/4421207/how-to-get-the-last-n-records-in-mongodb
-        this_db.collection('greetings').find().sort({_id:-1}).limit(1).toArray(function(err, result) { 
-            if (err) throw err;
-            res.send(result[0]['Message']);
+        this_db.collection('greetings').find({"Username": req.query.Username}).sort({_id:-1}).limit(1).toArray(function(err, result) { 
+            if (result.length == 0 || result[0] == null) {
+                res.send("***This username has no stored greetings***");
+            }
+            else {
+                res.send(result[0]['Message']);
+            }
         });
         db.close();
     });

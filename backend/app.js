@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 //mostly created by express-generator and some modifications per 
 //https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/
+// (no original changes)
 var cors = require("cors");
 var indexRouter = require('./routes/index');
 var dbDemoRouter = require('./routes/demo-db-access');
